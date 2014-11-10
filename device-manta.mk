@@ -20,5 +20,3 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/lib/libjhead.so:system/lib/libjhead.so:samsung \
 	$(LOCAL_PATH)/proprietary/system/lib/libjhead_jni.so:system/lib/libjhead_jni.so:samsung \
 	$(LOCAL_PATH)/proprietary/system/media/bootanimation.zip:system/media/bootanimation.zip:samsung
-
-$(call inherit-product, $(LOCAL_PATH)/device-manta.mk)

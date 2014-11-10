@@ -24,4 +24,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true \
     ro.com.widevine.cachesize=16777216
 
-$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage9.mk)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/system/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf:samsung
+
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage13.mk)
+
+$(call inherit-product, $(LOCAL_PATH)/device-manta.mk)
